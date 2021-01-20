@@ -1,0 +1,82 @@
+
+# Please take the time to finish this file as described in
+# https://sourceforge.net/p/lirc-remotes/wiki/Checklist/
+# and make it available to others by sending it to
+# <lirc@bartelmus.de>
+#
+# This config file was automatically generated
+# using lirc-0.9.4c(default) on Mon Sep 21 16:56:40 2020
+# Command line used: -H default -d /dev/lirc0
+# Kernel version (uname -r): 4.9.113-22-osmc
+#
+# Remote name (as of config file): int2
+# Brand of remote device, the thing you hold in your hand:
+# Remote device model nr:
+# Remote device info url:
+# Does remote device has a bundled capture device e. g., a
+#     usb dongle? :
+# For bundled USB devices: usb vendor id, product id
+#     and device string (use dmesg or lsusb):
+# Type of device controlled
+#     (TV, VCR, Audio, DVD, Satellite, Cable, HTPC, ...) :
+# Device(s) controlled by this remote:
+
+begin remote
+
+  name  int2
+  bits           13
+  flags RC5|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  one           930   824
+  zero          930   824
+  plead         982
+  gap          112888
+  toggle_bit_mask 0x800
+  frequency    38000
+
+      begin codes
+
+          KEY_UP                   0x1794
+          KEY_DOWN                 0x1795
+          KEY_LEFT                 0x1796
+          KEY_RIGHT                0x1797
+          KEY_OK                   0x17A5
+          KEY_HOME                 0x178D
+          KEY_INFO                 0x17BA
+          KEY_MENU                 0x179B
+          KEY_BACK                 0x179F
+          KEY_RED                  0x178B
+          KEY_GREEN                0x17AE
+          KEY_YELLOW               0x17B8
+          KEY_BLUE                 0x17A9
+          KEY_ZOOM                 0x178C
+          KEY_STOP                 0x17B6
+          KEY_RECORD               0x17B7
+          KEY_REWIND               0x17B2
+          KEY_FASTFORWARD          0x17B4
+          KEY_PLAY                 0x17B5
+          KEY_PREVIOUS             0x179E
+          KEY_NEXT                 0x17A4
+          KEY_PAUSE                0x17B0 0x6487C000
+          KEY_CHANNELUP            0x17A0 0x6487C000
+          KEY_CHANNELDOWN          0x17A1 0x6487C000
+          KEY_1                    0x1781 0x6487C000
+          KEY_2                    0x1782 0x6487C000
+          KEY_3                    0x1783 0x6487C000
+          KEY_4                    0x1784 0x6487C000
+          KEY_5                    0x1785 0x6487C000
+          KEY_6                    0x1786 0x6487C000
+          KEY_7                    0x1787 0x6487C000
+          KEY_8                    0x1788 0x6487C000
+          KEY_9                    0x1789 0x6487C000
+          KEY_0                    0x1780 0x6487C000
+          KEY_SUBTITLE             0x179A 0x6487C000
+          KEY_LANGUAGE             0x1799 0x6487C000
+          KEY_TITLE                0x1798 0x6487C000
+      end codes
+
+end remote
+
+
